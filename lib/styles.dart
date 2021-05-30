@@ -10,7 +10,7 @@ class KColors {
 }
 
 class KText {
-  static TextStyle title = TextStyle(
+  TextStyle title = TextStyle(
     fontSize: 24,
     color: KColors.primaryColor,
     fontWeight: FontWeight.bold
