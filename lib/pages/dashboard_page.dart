@@ -231,6 +231,26 @@ class DashboardPage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled, color: KColors.darkBlue,),
+            label: 'home'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmark_outline_rounded, color: KColors.darkBlue,),
+            label: 'home'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.ticket, color: KColors.darkBlue,),
+            label: 'home'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings_outlined, color: KColors.darkBlue,),
+            label: 'home'
+          ),
+        ],
+      ),
     );
   }
 }
