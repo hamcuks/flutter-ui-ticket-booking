@@ -32,8 +32,11 @@ class DashboardPage extends StatelessWidget {
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: KColors.darkBlue),
+                      borderRadius: BorderRadius.circular(15),
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/avatar.png'),
+                      ),
+                    ),
                   )
                 ],
               ),
@@ -169,11 +172,20 @@ class DashboardPage extends StatelessWidget {
               ),
               SizedBox(height: 30),
               ClipRRect(
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(20),
                 child: Container(
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * .3,
-                  color: KColors.darkBlue,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+                      colors: [
+                        KColors.textColor,
+                        KColors.darkBlue
+                      ]
+                    )
+                  ),
                   child: Stack(
                     children: [
                       Padding(
@@ -209,8 +221,8 @@ class DashboardPage extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        right: 0,
-                        bottom: 0,
+                          right: 0,
+                          bottom: 0,
                           child: Image.asset(
                             'assets/images/woman-mask.png',
                             width: 220,
@@ -219,7 +231,7 @@ class DashboardPage extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: ClipRRect(
                           child: BackdropFilter(
-                            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+                            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20, tileMode: TileMode.decal),
                             child: Container(
                               alignment: Alignment.center,
                               height: 50,
