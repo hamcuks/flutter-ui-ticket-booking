@@ -133,7 +133,7 @@ class DashboardPage extends StatelessWidget {
                     width: 50,
                     height: 50,
                     child: Icon(
-                      CupertinoIcons.info_circle,
+                      CupertinoIcons.exclamationmark_circle,
                       color: KColors.darkBlue.withOpacity(.6),
                     ),
                     decoration: BoxDecoration(
@@ -172,7 +172,7 @@ class DashboardPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 child: Container(
                   width: double.infinity,
-                  height: MediaQuery.of(context).size.height * .25,
+                  height: MediaQuery.of(context).size.height * .3,
                   color: KColors.darkBlue,
                   child: Stack(
                     children: [
@@ -186,14 +186,14 @@ class DashboardPage extends StatelessWidget {
                               style: TextStyle(color: KColors.white),
                             ),
                             SizedBox(
-                              height: 30,
+                              height: 50,
                             ),
                             Text(
                               'Stay Safe',
                               style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 22,
                                   color: KColors.white,
-                                  fontWeight: FontWeight.w600),
+                                  fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
                               height: 10,
@@ -208,18 +208,30 @@ class DashboardPage extends StatelessWidget {
                           ],
                         ),
                       ),
+                      Positioned(
+                        right: 0,
+                        bottom: 0,
+                          child: Image.asset(
+                            'assets/images/woman-mask.png',
+                            width: 220,
+                          )),
                       Align(
                         alignment: Alignment.bottomCenter,
-                        child: Container(
-                          alignment: Alignment.center,
-                          height: 50,
-                          color: KColors.grey,
-                          child: Text(
-                            'Learn More',
-                            style: TextStyle(
-                                fontSize: 14,
-                                color: KColors.white,
-                                fontWeight: FontWeight.normal),
+                        child: ClipRRect(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+                            child: Container(
+                              alignment: Alignment.center,
+                              height: 50,
+                              color: KColors.textColor.withOpacity(0.3),
+                              child: Text(
+                                'Learn More',
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    color: KColors.white,
+                                    fontWeight: FontWeight.normal),
+                              ),
+                            ),
                           ),
                         ),
                       )
@@ -236,21 +248,30 @@ class DashboardPage extends StatelessWidget {
         showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled, color: KColors.darkBlue,),
+            icon: Icon(
+              Icons.home_filled,
+              color: KColors.darkBlue,
+            ),
             label: 'home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.bookmark_border_rounded, color: KColors.darkBlue,),
-            label: 'home'
-          ),
+              icon: Icon(
+                Icons.bookmark_border_rounded,
+                color: KColors.darkBlue,
+              ),
+              label: 'home'),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.ticket, color: KColors.darkBlue,),
-            label: 'home'
-          ),
+              icon: Icon(
+                CupertinoIcons.ticket,
+                color: KColors.darkBlue,
+              ),
+              label: 'home'),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings_outlined, color: KColors.darkBlue,),
-            label: 'home'
-          ),
+              icon: Icon(
+                Icons.settings_outlined,
+                color: KColors.darkBlue,
+              ),
+              label: 'home'),
         ],
       ),
     );
