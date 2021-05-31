@@ -232,13 +232,15 @@ class DashboardPage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled, color: KColors.darkBlue,),
-            label: 'home'
+            label: 'home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.bookmark_outline_rounded, color: KColors.darkBlue,),
+            icon: Icon(Icons.bookmark_border_rounded, color: KColors.darkBlue,),
             label: 'home'
           ),
           BottomNavigationBarItem(
