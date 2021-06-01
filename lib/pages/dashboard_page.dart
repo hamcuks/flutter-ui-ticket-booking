@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:train_booking_app/pages/choose_seat_page.dart';
 import 'package:train_booking_app/styles.dart';
 import 'package:dotted_line/dotted_line.dart';
 
@@ -153,11 +154,16 @@ class DashboardPage extends StatelessWidget {
                       height: 50,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
+                          elevation: 0,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)),
                           primary: KColors.primaryColor,
                         ),
-                        onPressed: () {},
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (builder) => ChooseSeatPage(),
+                          ),
+                        ),
                         child: Text(
                           'Continue',
                           style: TextStyle(
@@ -177,15 +183,10 @@ class DashboardPage extends StatelessWidget {
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * .3,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.bottomLeft,
-                      end: Alignment.topRight,
-                      colors: [
-                        KColors.textColor,
-                        KColors.darkBlue
-                      ]
-                    )
-                  ),
+                      gradient: LinearGradient(
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.topRight,
+                          colors: [KColors.textColor, KColors.darkBlue])),
                   child: Stack(
                     children: [
                       Padding(
@@ -231,7 +232,10 @@ class DashboardPage extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: ClipRRect(
                           child: BackdropFilter(
-                            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20, tileMode: TileMode.decal),
+                            filter: ImageFilter.blur(
+                                sigmaX: 20,
+                                sigmaY: 20,
+                                tileMode: TileMode.decal),
                             child: Container(
                               alignment: Alignment.center,
                               height: 50,
