@@ -3,7 +3,7 @@
 Hello, Saya baru saja menyelesaikan Flutter UI Challenge. Aplikasi ini merupakan konsep design yang saya temukan di [Dribbble](https://dribbble.com/shots/15418720-Train-Booking-App). Ini merupakan aplikasi untuk melakukan booking ticket kereta.
 
 # Design
-![Design Train Booking App](/assets/images/design.png)
+![Design Train Booking App](/assets/images/design.webp)
 
 # Flutter App
 ![Flutter Train Booking App](/assets/images/app1.png)
