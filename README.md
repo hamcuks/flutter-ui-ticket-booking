@@ -7,7 +7,7 @@ Design by [Tri Milliarta](https://dribbble.com/milliarta)
 ![Design Train Booking App](/assets/images/design.webp)
 
 # Flutter App
-<img src="/assets/images/app1.png" width="200"/><img src="/assets/images/app2.png" width="200"/><img src="/assets/images/app2.png" width="200"/>
+<img src="/assets/images/app1.png" width="200"/><img src="/assets/images/app2.png" width="200"/><img src="/assets/images/app3.png" width="200"/>
 
 
 # Dependecies
