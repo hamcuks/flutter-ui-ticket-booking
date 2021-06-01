@@ -6,7 +6,7 @@ Hello, Saya baru saja menyelesaikan Flutter UI Challenge. Aplikasi ini merupakan
 ![Design Train Booking App](/assets/images/design.webp)
 
 # Flutter App
-![Flutter Train Booking App](/assets/images/app1.png)
+![Flutter Train Booking App](/assets/images/app1.png | width=100)
 ![Flutter Train Booking App](/assets/images/app2.png)
 ![Flutter Train Booking App](/assets/images/app3.png)
 
