@@ -7,7 +7,6 @@ class KColors {
   static const Color grey = Color(0xFFEBEBEB);
   static const Color red = Color(0xFFED000E);
   static const Color white = Color(0xFFFAFAFA);
-  static const Color green = Color(0xFF50C878);
 }
 
 class KText {

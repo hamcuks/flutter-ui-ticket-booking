@@ -16,7 +16,6 @@ class ChooseSeatPage extends StatelessWidget {
           onPressed: () => Navigator.of(context).pop(),
         ),
         backgroundColor: Colors.transparent,
-        foregroundColor: KColors.textColor,
         elevation: 0,
         title: Text(
           'Select Seat',
